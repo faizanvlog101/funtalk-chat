@@ -11,58 +11,57 @@ module.exports = {
     networkName: 'FUN Talk Network'
   },
 
-  // --- Bot Presence Settings (50+ users in room) ---
+  // --- Bot Presence Settings (50+ to 75+ active users in room from pool of 400) ---
   presence: {
-    targetOnlineBots: 54,
-    minBotsOnline: 50,
-    maxBotsOnline: 64,
-    initialOnlineCount: 52
+    targetOnlineBots: 65,
+    minBotsOnline: 55,
+    maxBotsOnline: 78,
+    initialOnlineCount: 62
   },
 
   // --- Active Chatting Pool Dynamics ---
-  // 6-10 chatters active on main; chatters rotate naturally between chatting and going quiet
+  // 5-8 chatters active on main at any given time; chatters rotate naturally
   activeChattingPool: {
-    minActiveSpeakers: 6,
-    maxActiveSpeakers: 10,
+    minActiveSpeakers: 5,
+    maxActiveSpeakers: 8,
     maxMessagesBeforeQuiet: {
       min: 2,
       max: 4
     },
-    rotationCheckIntervalSeconds: 20
+    rotationCheckIntervalSeconds: 30
   },
 
   // --- Timing Settings ---
   timing: {
-    // Slower, comfortable conversation pace between spontaneous messages
+    // Slower, relaxed conversation pace between spontaneous messages (18-38 seconds)
     channelChatterInterval: {
-      minSeconds: 10,
-      maxSeconds: 22
+      minSeconds: 18,
+      maxSeconds: 38
     },
 
     // Realistic human typing simulation delay
     replyDelay: {
-      minMs: 1400,
-      maxMs: 3200,
-      charsPerSecond: 28
+      minMs: 1800,
+      maxMs: 4000,
+      charsPerSecond: 24
     },
 
-    // Multi-bot conversation / topic interval
+    // Multi-bot conversation / topic interval (45-90 seconds)
     interBotDialogueInterval: {
-      minSeconds: 25,
-      maxSeconds: 50
+      minSeconds: 45,
+      maxSeconds: 90
     },
 
-    // Frequent, lively join / part activity in the room (seconds)
-    // Runs regularly so user sees continuous joins and parts
+    // Increased join / part activity in the room (every 4-10 seconds)
     joinLeaveInterval: {
-      minSeconds: 7,
-      maxSeconds: 18
+      minSeconds: 4,
+      maxSeconds: 10
     },
 
     // How long a departed bot stays away before rejoining (seconds)
     rejoinDelay: {
-      minSeconds: 8,
-      maxSeconds: 22
+      minSeconds: 5,
+      maxSeconds: 15
     }
   },
 
