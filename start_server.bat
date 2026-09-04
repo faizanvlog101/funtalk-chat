@@ -20,7 +20,7 @@ if %ERRORLEVEL% neq 0 (
 :: 2. Check if dependencies are installed (First Run Check)
 if not exist "node_modules\" (
     echo [FIRST RUN] Dependencies not found!
-    echo Installing necessary libraries (express, socket.io, irc-framework)...
+    echo Installing necessary libraries...
     echo.
     call npm install
     if %ERRORLEVEL% neq 0 (
@@ -32,12 +32,6 @@ if not exist "node_modules\" (
     echo.
     echo [OK] All necessary libraries have been installed successfully!
     echo.
-) else (
-    :: Quick verification that express and socket.io exist
-    if not exist "node_modules\express\" (
-        echo [INFO] Incomplete libraries detected. Running npm install...
-        call npm install
-    )
 )
 
 :: 3. Launch Server
