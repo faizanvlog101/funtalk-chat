@@ -1,425 +1,425 @@
 // bot_nicks.js - Authentic IRC Nickname Roster (400 Nicknames)
 // Real Pakistani, NRP, Desi & WebChat Nicknames
-// Interleaved Female and Male distribution
+// Bots have prefix: "" (only real IRC users can have @ or +)
 
 module.exports = [
   {
     "nick": "Hina",
-    "prefix": "@",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Male32pak",
-    "prefix": "@",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "AnGeLiNa",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "SanFranGuy",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Akansha",
-    "prefix": "@",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Guest786-Germany",
-    "prefix": "@",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Fairy",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "Zaviyaarr",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Rubi",
-    "prefix": "@",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "ansawer",
-    "prefix": "@",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "Alice",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Ahmed26",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Billo",
-    "prefix": "@",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Carl",
-    "prefix": "@",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Girl123",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "papu",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Sunita",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "NoChill_",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Girluk",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "bugs_bunny",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Jenny",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "Cokey",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "KhanZaadi",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Osman50",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Guriya",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Ben",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Englishbebo",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Winterfell_",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "sahrish",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Bilal25",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Hoor",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "Ssss",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Ardyce",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "ammadmi",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "erij",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "classic33",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Samya-Zabi",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "__Abbas",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Aarohi",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Zishan",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Pooja",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Male-ISB",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Pari",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "DxbDude",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "CherryBlossom",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "SensibleMan",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "Diya",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "pasha",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Abiha",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "shahzad",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "ArMeeNa",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Zawiyar",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Sana123",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Kashif16",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Souriya",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "Fadi28lhr",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Sama",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "SameerKH",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "FrenchLady",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Ashir",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Bekky",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Dilse",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Honey",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Nonick",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "NikiTX",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "zuber",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Kitkat",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "Guest51128",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Irram29",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "Zain",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
@@ -1907,241 +1907,241 @@ module.exports = [
   },
   {
     "nick": "Aneeza_khi",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Danyal_Khi",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Mahnoor_Lhr",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Hamza_Rao",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Saman_Isb",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Usman_Lhr",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Rumaisa",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Adeel_Dxb",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Anaya_Khan",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Waqas_Isb",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Zoya_UK",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Fahad_Khan",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Rameen_99",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Shoaib_Akhtar_",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Mehak_Pari",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "Muneeb_UK",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "Laiba_Ch",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Haris_CS",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Natasha_Khan",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "Asad_Gujjar",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Sidra_khi",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Khurram_Khi",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },
   {
     "nick": "Iqra_Cute",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Rizwan_Lhr",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Fabiha_Lhr",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Taimoor_Isb",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Ayeza_Ali",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Junaid_J",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Mishal_Grl",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "f"
   },
   {
     "nick": "Shahbaz_Dxb",
-    "prefix": "+",
+    "prefix": "",
     "style": "edgy",
     "gender": "m"
   },
   {
     "nick": "Kinza_isb",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "f"
   },
   {
     "nick": "Naveed_UK",
-    "prefix": "+",
+    "prefix": "",
     "style": "sarcastic",
     "gender": "m"
   },
   {
     "nick": "Warda_UK",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "f"
   },
   {
     "nick": "Zubair_Bhai",
-    "prefix": "+",
+    "prefix": "",
     "style": "friendly",
     "gender": "m"
   },
   {
     "nick": "Sehar_Chai",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "f"
   },
   {
     "nick": "Saad_ChaiWala",
-    "prefix": "+",
+    "prefix": "",
     "style": "chill",
     "gender": "m"
   },
   {
     "nick": "Alishba_K",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "f"
   },
   {
     "nick": "Waleed_99",
-    "prefix": "+",
+    "prefix": "",
     "style": "gamer",
     "gender": "m"
   },
   {
     "nick": "Noreen_khi",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "f"
   },
   {
     "nick": "Arslan_khi",
-    "prefix": "+",
+    "prefix": "",
     "style": "nerdy",
     "gender": "m"
   },

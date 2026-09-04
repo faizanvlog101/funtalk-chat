@@ -237,6 +237,16 @@ io.on('connection', (socket) => {
       });
     });
 
+    // Real IRC Channel Modes (Ops @ and Voiced +)
+    client.on('mode', (event) => {
+      socket.emit('irc_mode', {
+        channel: event.target,
+        nick: event.nick,
+        modes: event.modes,
+        raw: event.raw_modes
+      });
+    });
+
     // Merge real IRC userlist with local fake bots
     client.on('userlist', (event) => {
       const realUsers = (event.users || []).map(u => ({

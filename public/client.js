@@ -903,6 +903,34 @@
     }
   });
 
+  // Channel Mode change (Real Ops @ and Voiced +)
+  socket.on('irc_mode', (data) => {
+    const chan = data.channel;
+    const tab = state.tabs.get(chan);
+    if (data.raw) {
+      addMessageToTab(chan, {
+        time: new Date().toISOString(),
+        type: 'system',
+        text: `Mode <b>${escapeHtml(data.raw)}</b> set by <b>${escapeHtml(data.nick || 'Server')}</b>`
+      });
+    }
+    if (tab && tab.users && Array.isArray(data.modes)) {
+      data.modes.forEach(m => {
+        const targetNick = m.param;
+        const u = tab.users.find(user => user.nick.toLowerCase() === (targetNick || '').toLowerCase());
+        if (u) {
+          if (m.mode === '+o') u.prefix = '@';
+          else if (m.mode === '-o') u.prefix = (u.prefix === '@' ? '' : u.prefix);
+          else if (m.mode === '+v') u.prefix = (u.prefix === '@' ? '@' : '+');
+          else if (m.mode === '-v') u.prefix = (u.prefix === '+' ? '' : u.prefix);
+        }
+      });
+      if (state.activeTab === chan) {
+        renderUserList();
+      }
+    }
+  });
+
   // Channel Names (Userlist)
   socket.on('irc_names', (data) => {
     const chan = data.channel;
