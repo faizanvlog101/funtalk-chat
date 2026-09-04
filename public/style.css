@@ -454,6 +454,27 @@ body {
   border-color: var(--accent);
 }
 
+.input-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-emoji {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 3px 6px;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.btn-emoji:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .btn-send {
   background: var(--accent);
   color: #fff;
@@ -468,6 +489,72 @@ body {
 
 .btn-send:hover {
   background: var(--accent-hover);
+}
+
+/* Emoji Picker Popover */
+.emoji-picker {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  width: 270px;
+  background: #1a1c24;
+  border: 1px solid #2e3242;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  z-index: 50;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.emoji-picker.hidden {
+  display: none;
+}
+
+.emoji-categories {
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid #282c3c;
+  padding-bottom: 6px;
+}
+
+.emoji-cat {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  opacity: 0.65;
+  transition: all 0.15s;
+}
+
+.emoji-cat:hover, .emoji-cat.active {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.emoji-item {
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  padding: 3px;
+  border-radius: 4px;
+  user-select: none;
+  transition: background 0.1s, transform 0.1s;
+}
+
+.emoji-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.15);
 }
 
 /* User Sidebar - Compact Desktop (155px) & Drawer Mobile */

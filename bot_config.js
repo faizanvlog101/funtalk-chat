@@ -13,20 +13,20 @@ module.exports = {
 
   // --- Bot Presence Settings (50+ to 75+ active users in room from pool of 400) ---
   presence: {
-    targetOnlineBots: 65,
+    targetOnlineBots: 165,
     minBotsOnline: 55,
-    maxBotsOnline: 78,
+    maxBotsOnline: 178,
     initialOnlineCount: 62
   },
 
   // --- Active Chatting Pool Dynamics ---
   // 5-8 chatters active on main at any given time; chatters rotate naturally
   activeChattingPool: {
-    minActiveSpeakers: 5,
-    maxActiveSpeakers: 8,
+    minActiveSpeakers: 3,
+    maxActiveSpeakers: 5,
     maxMessagesBeforeQuiet: {
-      min: 2,
-      max: 4
+      min: 3,
+      max: 6
     },
     rotationCheckIntervalSeconds: 30
   },
@@ -54,14 +54,14 @@ module.exports = {
 
     // Increased join / part activity in the room (every 4-10 seconds)
     joinLeaveInterval: {
-      minSeconds: 4,
-      maxSeconds: 10
+      minSeconds: 5,
+      maxSeconds: 20
     },
 
     // How long a departed bot stays away before rejoining (seconds)
     rejoinDelay: {
-      minSeconds: 5,
-      maxSeconds: 15
+      minSeconds: 80,
+      maxSeconds: 120
     }
   },
 

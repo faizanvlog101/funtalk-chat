@@ -645,6 +645,254 @@ module.exports = {
         "Hunza ka peaceful vibe alag hi level hai honestly, dil hi nahi chahta wapis aane ko <3",
         "bhai sath mein warm kapray lazmi le kar jana, raat ko freezing temperature hota hai"
       ]
+    },
+    {
+      "topic": "uni_life",
+      "starterGender": "f",
+      "starterLines": [
+        "aaj uni mein professor ne surprise quiz le liya, sab ke hosh urh gaye lol",
+        "meri group assignment ka partner koi kaam hi nahi kar raha, sara mujhe karna par raha hai :(",
+        "final exams ki date sheet aa gayi hai, dekh kar hi BP high ho gaya mera ^^"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haha group projects ka hamesha yahi scene hota hai, aik banda rota hai baqi maze karte hain!",
+        "haye mujhe to presentation se sab se zyada dar lagta hai stage pe khare ho kar :P",
+        "tension na lo, aakhri raat parh ke pass hone ka apna hi maza hota hai haha!"
+      ]
+    },
+    {
+      "topic": "cooking_routine",
+      "starterGender": "f",
+      "starterLines": [
+        "aaj maine pehli baar aloo gosht banaya khud se, shukar hai theek ban gaya ^^",
+        "roz sochna parta hai ke aaj khane mein kya pakayein, sab se bara masla yahi hai haha",
+        "biryani mein masalay thore tez ho gaye aaj mere se, sab pani mang rahe thay lol"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "wah zabardast! cooking seekhna waise bohot satisfying hota hai honestly <3",
+        "sahi baat hai! ghar mein roz ka sawal hota hai: aaj kya banega? aur koi jawab nahi deta :D",
+        "koi baat nahi, thora dahi daal lo balance ho jata hai masala haha ^^"
+      ]
+    },
+    {
+      "topic": "shopping_bazaar",
+      "starterGender": "f",
+      "starterLines": [
+        "aaj Anarkali / Tariq Road gayi thi shopping ke liye, pair dard karne lag gaye chal chal ke",
+        "online dress mangwaya tha picture mein kuch aur tha aur deliver kuch aur hua :(",
+        "matching dupattay aur lace dhoondte dhoondte 3 ghante nikal gaye bazaar mein lol"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haye online shopping ka yehi risk hota hai hamesha, return policy hai unki?",
+        "haha girls ki shopping to subha se sham tak chalti hai, thak to jana hi hai :P",
+        "bazaar mein bargaining karni parhti hai khoob, warna double rate lagate hain wo log!"
+      ]
+    },
+    {
+      "topic": "office_job",
+      "starterGender": "m",
+      "starterLines": [
+        "aaj boss ne aakhri waqt pe naya task de diya jab main nikalne laga tha bhai",
+        "client meeting 2 ghante chali aur conclusion nikla zero, email pe hi ho sakta tha ye lol",
+        "aaj pehli tareeq thi salary aayi aur aate hi bills mein urh gayi saari haha"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "bhai ye corporate life ka sab se dukh bhara lamha hota hai, pack up ke waqt task aana!",
+        "haha salary is like guest, aati hai salam karti hai aur chali jati hai bro :D",
+        "sahi bol rahe ho bhai, meeting could have been an email wali baat hai bilkul!"
+      ]
+    },
+    {
+      "topic": "sleep_routine",
+      "starterGender": "any",
+      "starterLines": [
+        "meri sleeping routine itni kharab ho chuki hai na, subha 4 baje so raha hoon roz",
+        "aaj afternoon nap li thi 20 minute ke liye, utha to 3 ghante baad shaam ho chuki thi lol",
+        "subha uth kar lagta hai ke bas 5 minute mazeed so jaoon, wo 5 minute sab se pyare hote hain"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haha afternoon nap mein banda uthta hai to samajh nahi aati kaun sa saal chal raha hai :P",
+        "screen time kam karo raat ko bed pe, neend foran aayegi... waise bolna aasan hai karta koi nahi ^^",
+        "bhai wo 5 minute ki neend jannat hoti hai sach mein lol!"
+      ]
+    },
+    {
+      "topic": "family_rishta_banter",
+      "starterGender": "any",
+      "starterLines": [
+        "dost ki shadi ka card aaya hai kal, ab soch rahi hoon pehanna kya hai lol",
+        "khandan mein kisi ki shadi ho to pura hafta shopping aur salon mein nikal jata hai ^^",
+        "aaj phoppo aayi hui theen ghar pe, rishtay ki baatein shuru ho gayi theen haha"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haye shadi seasons mein kapron ka intikhab sab se mushkil task hota hai honestly <3",
+        "haha phoppo ka kaam hi yehi hota hai har event pe shadi ka sawal poochna :P",
+        "lekin shadi ka khana... wo jo aakhir mein one-dish khulne pe bhagte hain sab, best entertainment lol"
+      ]
+    }
+  ],
+  "timeOfDaySmallTalk": {
+    "morning": {
+      "female": [
+        "good morning everyone! subha subha uthne ka bilkul dil nahi kar raha tha",
+        "aaj subha 8 baje meri uni ki class hai, late ho gayi to professor ne entry nahi deni lol",
+        "garam garam halwa puri aur channay ka nashta kiya kisi ne aaj? ^^",
+        "subha subha alarm band kar ke dobara so gayi thi, ab bhagte hue nikal rahi hoon :P",
+        "itni pyari dhoop nikli hai subha subha, fresh feel ho raha hai alhamdulillah"
+      ],
+      "male": [
+        "subha bakhair jani! kya scene hai sab ka?",
+        "bhai subha subha itna shadeed traffic tha road pe, 45 minute phasa raha",
+        "office pohanch gaya hoon bhai, pehla cup chai ka peeye baghair aankhein nahi khul rahi lol",
+        "aaj subha weather kafi chill tha ride pe, maza aa gaya",
+        "morning meeting 9 baje rakh di client ne, neend abhi tak poori nahi hui bhai"
+      ]
+    },
+    "afternoon": {
+      "female": [
+        "uni se abhi ghar wapis aayi hoon, itni thak gayi hoon na sach mein",
+        "aaj lunch mein daal chawal aur salad banaya tha ammi ne, so comforting ^^",
+        "dopahar ki dhoop mein bahir nikalna bohot mushkil hai honestly",
+        "mera test itna mushkil aaya tha aaj uni mein, pata nahi pass hongi ya nahi haha",
+        "thora rest kar rahi thi, sham ko assignment submit karwani hai"
+      ],
+      "male": [
+        "bhai lunch break hua hai abhi, biryani mangwa rahe hain sab office walay",
+        "dopahar ko office mein jo neend aati hai na uska koi ilaaj nahi bhai lol",
+        "site visit se wapis aaya hoon abhi, garmi bohot thi bahir",
+        "bhai half day guzar gaya, baki din bhi jaldi nikal jaye bas",
+        "lunch ke baad dhaabay se kadak chai pee kar thori energy aayi hai"
+      ]
+    },
+    "evening": {
+      "female": [
+        "shaam ka time sab se peaceful hota hai din mein <3",
+        "kitchen mein ammi ke sath khana pakwa rahi thi abhi ^^",
+        "dost ke sath bazaar gayi thi kapray stitch hone dene, itna rush tha",
+        "shaam ki chai ke sath samosay khane ka dil kar raha hai kis kis ka?",
+        "pura din kaisay guzar gaya pata hi nahi chala honestly"
+      ],
+      "male": [
+        "office se nikal raha hoon abhi, raste mein traffic check karo zara",
+        "dosto ke sath dhaabay pe baithne ka time ho gaya bhai",
+        "gym ka time ho gaya hai, leg day hai aaj sakht himmat chahiye lol",
+        "shaam ko cricket match dekhne ka alag hi maza hota hai bhai",
+        "ghar pohanch kar sab se pehle bed pe girne ka plan hai mera"
+      ]
+    },
+    "night": {
+      "female": [
+        "late night chats ka apna hi sukoon hai jab sab so rahe hon ^^",
+        "soch rahi thi kal subha jaldi uthoon gi, lekin neend hi nahi aa rahi lol",
+        "lofi playlist sun rahi hoon room mein lights off kar ke <3",
+        "raat ko 1 baje bhook lagti hai to fridge mein dhoondna parta hai kuch :P",
+        "kal subha ka socho to abhi se tension hone lagti hai haha"
+      ],
+      "male": [
+        "late night session start ho chuka hai bhai, kaun kaun jag raha hai?",
+        "raat ko 2 baje anday wala burger aur chai... unmatched combo bro",
+        "CS2 / Valorant ka match chal raha tha bhai, last round choke kar diya lol",
+        "kal subha jaldi uthna hai lekin neend aane ka naam hi nahi le rahi",
+        "bhai sannata ho gaya hai bahir, full chill scene hai"
+      ]
+    }
+  },
+  "routineConversations": [
+    {
+      "topic": "uni_life",
+      "starterGender": "f",
+      "starterLines": [
+        "aaj uni mein professor ne surprise quiz le liya, sab ke hosh urh gaye lol",
+        "meri group assignment ka partner koi kaam hi nahi kar raha, sara mujhe karna par raha hai :(",
+        "final exams ki date sheet aa gayi hai, dekh kar hi BP high ho gaya mera ^^"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haha group projects ka hamesha yahi scene hota hai, aik banda rota hai baqi maze karte hain!",
+        "haye mujhe to presentation se sab se zyada dar lagta hai stage pe khare ho kar :P",
+        "tension na lo, aakhri raat parh ke pass hone ka apna hi maza hota hai haha!"
+      ]
+    },
+    {
+      "topic": "cooking_routine",
+      "starterGender": "f",
+      "starterLines": [
+        "aaj maine pehli baar aloo gosht banaya khud se, shukar hai theek ban gaya ^^",
+        "roz sochna parta hai ke aaj khane mein kya pakayein, sab se bara masla yahi hai haha",
+        "biryani mein masalay thore tez ho gaye aaj mere se, sab pani mang rahe thay lol"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "wah zabardast! cooking seekhna waise bohot satisfying hota hai honestly <3",
+        "sahi baat hai! ghar mein roz ka sawal hota hai: aaj kya banega? aur koi jawab nahi deta :D",
+        "koi baat nahi, thora dahi daal lo balance ho jata hai masala haha ^^"
+      ]
+    },
+    {
+      "topic": "shopping_bazaar",
+      "starterGender": "f",
+      "starterLines": [
+        "aaj Anarkali / Tariq Road gayi thi shopping ke liye, pair dard karne lag gaye chal chal ke",
+        "online dress mangwaya tha picture mein kuch aur tha aur deliver kuch aur hua :(",
+        "matching dupattay aur lace dhoondte dhoondte 3 ghante nikal gaye bazaar mein lol"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haye online shopping ka yehi risk hota hai hamesha, return policy hai unki?",
+        "haha girls ki shopping to subha se sham tak chalti hai, thak to jana hi hai :P",
+        "bazaar mein bargaining karni parhti hai khoob, warna double rate lagate hain wo log!"
+      ]
+    },
+    {
+      "topic": "office_job",
+      "starterGender": "m",
+      "starterLines": [
+        "aaj boss ne aakhri waqt pe naya task de diya jab main nikalne laga tha bhai",
+        "client meeting 2 ghante chali aur conclusion nikla zero, email pe hi ho sakta tha ye lol",
+        "aaj pehli tareeq thi salary aayi aur aate hi bills mein urh gayi saari haha"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "bhai ye corporate life ka sab se dukh bhara lamha hota hai, pack up ke waqt task aana!",
+        "haha salary is like guest, aati hai salam karti hai aur chali jati hai bro :D",
+        "sahi bol rahe ho bhai, meeting could have been an email wali baat hai bilkul!"
+      ]
+    },
+    {
+      "topic": "sleep_routine",
+      "starterGender": "any",
+      "starterLines": [
+        "meri sleeping routine itni kharab ho chuki hai na, subha 4 baje so raha hoon roz",
+        "aaj afternoon nap li thi 20 minute ke liye, utha to 3 ghante baad shaam ho chuki thi lol",
+        "subha uth kar lagta hai ke bas 5 minute mazeed so jaoon, wo 5 minute sab se pyare hote hain"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haha afternoon nap mein banda uthta hai to samajh nahi aati kaun sa saal chal raha hai :P",
+        "screen time kam karo raat ko bed pe, neend foran aayegi... waise bolna aasan hai karta koi nahi ^^",
+        "bhai wo 5 minute ki neend jannat hoti hai sach mein lol!"
+      ]
+    },
+    {
+      "topic": "family_rishta_banter",
+      "starterGender": "any",
+      "starterLines": [
+        "dost ki shadi ka card aaya hai kal, ab soch rahi hoon pehanna kya hai lol",
+        "khandan mein kisi ki shadi ho to pura hafta shopping aur salon mein nikal jata hai ^^",
+        "aaj phoppo aayi hui theen ghar pe, rishtay ki baatein shuru ho gayi theen haha"
+      ],
+      "responderGender": "any",
+      "responderLines": [
+        "haye shadi seasons mein kapron ka intikhab sab se mushkil task hota hai honestly <3",
+        "haha phoppo ka kaam hi yehi hota hai har event pe shadi ka sawal poochna :P",
+        "lekin shadi ka khana... wo jo aakhir mein one-dish khulne pe bhagte hain sab, best entertainment lol"
+      ]
     }
   ]
 };

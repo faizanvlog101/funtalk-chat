@@ -58,8 +58,20 @@
       <div id="input-bar">
         <div id="chat-input-wrapper">
           <input id="chat-input" type="text" placeholder="Message #channel... (type /help for commands)" autocomplete="off" spellcheck="true">
+          <!-- Emoji Picker Popover -->
+          <div id="emoji-picker" class="emoji-picker hidden">
+            <div class="emoji-categories">
+              <span class="emoji-cat active" data-cat="popular">🔥</span>
+              <span class="emoji-cat" data-cat="faces">😊</span>
+              <span class="emoji-cat" data-cat="desi">🇵🇰</span>
+              <span class="emoji-cat" data-cat="gestures">👍</span>
+              <span class="emoji-cat" data-cat="hearts">❤️</span>
+            </div>
+            <div id="emoji-grid" class="emoji-grid"></div>
+          </div>
         </div>
         <div class="input-actions">
+          <button id="btn-emoji" class="btn-emoji" type="button" title="Insert Emoji">😊</button>
           <button id="btn-send" class="btn-send">Send</button>
         </div>
       </div>

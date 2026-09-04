@@ -308,6 +308,15 @@ class BotEngine {
     }
   }
 
+  // Returns 'morning' (5-11), 'afternoon' (12-16), 'evening' (17-21), 'night' (22-4)
+  getTimeOfDay() {
+    const hour = new Date().getHours();
+    if (hour >= 5 && hour < 12) return 'morning';
+    if (hour >= 12 && hour < 17) return 'afternoon';
+    if (hour >= 17 && hour < 22) return 'evening';
+    return 'night';
+  }
+
   // Anti-repetition line selector
   pickFresh(arr) {
     if (!arr || !arr.length) return '';
@@ -406,8 +415,13 @@ class BotEngine {
             }, rand(1400, 2600));
           }
         } else {
-          // Gender-specific small talk (girly "kar rahi hoon" vs boyish "kar raha hoon")
-          const pool = dialogs.smallTalk[genderKey] || dialogs.smallTalk.female;
+          // Gender-specific small talk mixed with dynamic Time-of-Day contextual chatter
+          const timeSlot = this.getTimeOfDay();
+          let pool = (dialogs.smallTalk[genderKey] || dialogs.smallTalk.female).slice();
+          if (dialogs.timeOfDaySmallTalk && dialogs.timeOfDaySmallTalk[timeSlot]) {
+            const timePool = dialogs.timeOfDaySmallTalk[timeSlot][genderKey] || [];
+            pool = pool.concat(timePool);
+          }
           const freshLine = this.pickFresh(pool);
           const line = this.humanize(freshLine, this.userNick, b.nick);
           this.sayWithTyping(chan, b.nick, line);

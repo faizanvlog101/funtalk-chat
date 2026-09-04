@@ -75,6 +75,10 @@
     btnToggleUsers: document.getElementById('btn-toggle-users'),
     btnCloseSidebar: document.getElementById('btn-close-sidebar'),
     headerUserCount: document.getElementById('header-user-count'),
+    // Emoji Picker
+    btnEmoji: document.getElementById('btn-emoji'),
+    emojiPicker: document.getElementById('emoji-picker'),
+    emojiGrid: document.getElementById('emoji-grid'),
     // Modals
     connectModal: document.getElementById('connect-modal'),
     helpModal: document.getElementById('help-modal'),
@@ -605,6 +609,69 @@
       state.tabCompleteMatches = [];
     }
   });
+
+  // Emoji Picker Logic
+  const EMOJI_SETS = {
+    popular: ['😂', '❤️', '🔥', '👍', '😊', '😍', '✨', '☕', '🇵🇰', '👏', '🙏', '💯', '😎', '🤣'],
+    faces: ['😀', '😃', '😄', '😁', '😆', '😅', '🤣', '😂', '🙂', '😉', '😊', '😇', '🥰', '😍', '🤩', '😘', '😋', '😜', '🤪', '😝', '🤗', '🤭', '🤫', '🤔', '🤐', '🤨', '😐', '😑', '😶', '😏', '😒', '🙄', '😬', '🤥', '😌', '😔', '😪', '🤤', '😴', '😷'],
+    desi: ['🇵🇰', '☕', '🍲', '🏏', '✨', '🕌', '🌙', '🍛', '🥘', '🍗', '🚗', '🏍️', '🌸', '💐'],
+    gestures: ['👍', '👎', '👌', '✌️', '🤞', '🤟', '🤘', '🤙', '👋', '✋', '🖐️', '🤝', '🙏', '💪', '👏', '🙌', '👐'],
+    hearts: ['❤️', '🧡', '💛', '💚', '💙', '💜', '🖤', '🤍', '🤎', '💔', '❣️', '💕', '💞', '💓', '💗', '💖', '💘', '💝']
+  };
+
+  let currentEmojiCategory = 'popular';
+
+  function renderEmojiGrid(category) {
+    if (!el.emojiGrid) return;
+    el.emojiGrid.innerHTML = '';
+    const emojis = EMOJI_SETS[category] || EMOJI_SETS.popular;
+    emojis.forEach(char => {
+      const span = document.createElement('span');
+      span.className = 'emoji-item';
+      span.textContent = char;
+      span.addEventListener('click', (e) => {
+        e.stopPropagation();
+        insertEmoji(char);
+      });
+      el.emojiGrid.appendChild(span);
+    });
+  }
+
+  function insertEmoji(char) {
+    const start = el.chatInput.selectionStart || el.chatInput.value.length;
+    const end = el.chatInput.selectionEnd || el.chatInput.value.length;
+    const val = el.chatInput.value;
+    el.chatInput.value = val.substring(0, start) + char + val.substring(end);
+    el.chatInput.focus();
+    const nextPos = start + char.length;
+    el.chatInput.setSelectionRange(nextPos, nextPos);
+  }
+
+  if (el.btnEmoji && el.emojiPicker) {
+    renderEmojiGrid('popular');
+
+    el.btnEmoji.addEventListener('click', (e) => {
+      e.stopPropagation();
+      el.emojiPicker.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.emoji-cat').forEach(catBtn => {
+      catBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        document.querySelectorAll('.emoji-cat').forEach(b => b.classList.remove('active'));
+        catBtn.classList.add('active');
+        const cat = catBtn.getAttribute('data-cat');
+        renderEmojiGrid(cat);
+      });
+    });
+
+    // Close picker when clicking outside
+    document.addEventListener('click', (e) => {
+      if (el.emojiPicker && !el.emojiPicker.contains(e.target) && e.target !== el.btnEmoji) {
+        el.emojiPicker.classList.add('hidden');
+      }
+    });
+  }
 
   el.sendBtn.addEventListener('click', handleSendMessage);
 
