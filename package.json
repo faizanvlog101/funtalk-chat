@@ -1,0 +1,18 @@
+{
+  "name": "mibbit-webchat",
+  "version": "1.0.0",
+  "description": "Mibbit-like Web IRC client with isolated display bots",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test_e2e.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "irc-framework": "^4.12.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}

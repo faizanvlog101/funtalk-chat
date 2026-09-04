@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>FUN Talk - Web IRC Client</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Application Header -->
+  <header id="app-header">
+    <div class="brand">
+      <div class="brand-icon">FT</div>
+      <h1>FUN Talk</h1>
+      <span class="version-tag">Chat</span>
+    </div>
+
+    <div class="server-status">
+      <div id="connection-dot" class="status-dot"></div>
+      <span id="server-label">Not Connected</span>
+    </div>
+
+    <div class="header-actions">
+      <button id="btn-toggle-users" class="btn-header btn-users-toggle" title="Toggle online users list">
+        <span>👥</span><span id="header-user-count" class="header-user-count">0</span>
+      </button>
+      <button id="btn-clear" class="btn-header hide-on-tiny" title="Clear chat in current tab">Clear</button>
+      <button id="btn-help" class="btn-header" title="View IRC slash commands">/Help</button>
+      <button id="btn-connect" class="btn-header btn-primary" title="Connect to chat network">Connect</button>
+    </div>
+  </header>
+
+  <!-- Tabs Bar -->
+  <nav id="tab-bar-container">
+    <div id="tab-list" class="tab-list">
+      <!-- Dynamically populated: Status, #channel, PM tabs -->
+    </div>
+  </nav>
+
+  <!-- Main Workspace -->
+  <main id="workspace">
+    <!-- Chat Area -->
+    <section id="chat-panel">
+      <!-- Channel Topic Bar -->
+      <div id="topic-bar">
+        <div id="topic-text">Welcome to FUN Talk!</div>
+        <div id="channel-stats">0 online</div>
+      </div>
+
+      <!-- Messages View -->
+      <div id="message-container"></div>
+
+      <!-- Bot Typing Notice -->
+      <div id="typing-indicator"></div>
+
+      <!-- Message & Command Input -->
+      <div id="input-bar">
+        <div id="chat-input-wrapper">
+          <input id="chat-input" type="text" placeholder="Message #channel... (type /help for commands)" autocomplete="off" spellcheck="true">
+        </div>
+        <div class="input-actions">
+          <button id="btn-send" class="btn-send">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Nickname Sidebar (Desktop panel & Mobile Drawer) -->
+    <aside id="user-sidebar" class="sidebar-hidden-mobile">
+      <div class="sidebar-header">
+        <div class="sidebar-title-row">
+          <h3>
+            <span>Online</span>
+            <span id="user-count">(0)</span>
+          </h3>
+          <button id="btn-close-sidebar" class="btn-close-sidebar" title="Close users panel">&times;</button>
+        </div>
+        <input id="user-search" type="text" placeholder="Filter nicknames..." autocomplete="off">
+      </div>
+      <div id="user-list"></div>
+    </aside>
+  </main>
+
+  <!-- User Context Popup Menu -->
+  <div id="user-menu" class="hidden">
+    <div class="user-menu-item" data-action="pm">Private Message</div>
+    <div class="user-menu-item" data-action="mention">Mention in Chat</div>
+    <div class="user-menu-item" data-action="whois">/WHOIS Info</div>
+  </div>
+
+  <!-- Nickname Selection Modal Dialog -->
+  <div id="connect-modal" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 360px;">
+      <div class="modal-header">
+        <h2>Join FUN Talk</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <form id="connect-form">
+        <div class="modal-body">
+          <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 2px;">
+            Enter your nickname to join the chat room:
+          </p>
+          <div class="form-group">
+            <label for="server-nick">Nickname</label>
+            <input id="server-nick" class="form-input" type="text" placeholder="e.g. Hamza, Ayesha, Guest..." maxlength="20" required autofocus>
+          </div>
+
+          <div class="form-group" style="margin-top: 2px;">
+            <label for="server-pass" style="font-size: 10px;">Password (Optional)</label>
+            <input id="server-pass" class="form-input" type="password" placeholder="Leave blank if none">
+          </div>
+        </div>
+
+        <div class="modal-footer" style="justify-content: flex-end;">
+          <button type="submit" class="btn-header btn-primary" style="padding: 6px 18px; font-size: 12.5px;">Join Chat</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Help & Commands Modal Dialog -->
+  <div id="help-modal" class="modal-backdrop hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>FUN Talk Commands</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" style="font-size: 13px; line-height: 1.5;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid var(--border-color);">
+            <th style="text-align: left; padding: 5px 0; color: var(--accent);">Command</th>
+            <th style="text-align: left; padding: 5px 0; color: var(--text-muted);">Description</th>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/join &lt;#chan&gt;</td>
+            <td>Join or open a channel tab</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/part [#chan]</td>
+            <td>Leave active channel & close tab</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/msg &lt;nick&gt; &lt;msg&gt;</td>
+            <td>Send private message & open PM tab</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/query &lt;nick&gt;</td>
+            <td>Open a private message tab with a user</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/nick &lt;newnick&gt;</td>
+            <td>Change your nickname</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/me &lt;action&gt;</td>
+            <td>Send an action / emote message</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/topic &lt;text&gt;</td>
+            <td>Set channel topic</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/clear</td>
+            <td>Clear message history in tab</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-family); padding: 4px 0;">/raw &lt;cmd&gt;</td>
+            <td>Send raw IRC command to server</td>
+          </tr>
+        </table>
+        <div style="margin-top: 8px; color: var(--text-muted); font-size: 12px;">
+          💡 <i>Tip: Click or tap any nickname to private message them! Press <b>Tab</b> to auto-complete nicknames on desktop.</i>
+        </div>
+      </div>
+      <div class="modal-footer" style="justify-content: flex-end;">
+        <button type="button" class="btn-header modal-close">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
