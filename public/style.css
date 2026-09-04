@@ -585,10 +585,7 @@ body {
   color: var(--text-main);
 }
 
-.user-name.is-self {
-  font-weight: 700;
-  color: #5ea4ff;
-}
+/* Identical natural appearance for all nicknames in list */
 
 /* Modals */
 .modal-backdrop {

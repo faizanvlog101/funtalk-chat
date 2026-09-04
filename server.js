@@ -249,9 +249,25 @@ io.on('connection', (socket) => {
 
     // Merge real IRC userlist with local fake bots
     client.on('userlist', (event) => {
+      const modeToPrefix = (modes, fallbackPrefix) => {
+        if (Array.isArray(modes)) {
+          if (modes.includes('o') || modes.includes('@')) return '@';
+          if (modes.includes('v') || modes.includes('+')) return '+';
+          if (modes.includes('h') || modes.includes('%')) return '%';
+          if (modes.includes('a') || modes.includes('&')) return '&';
+          if (modes.includes('q') || modes.includes('~')) return '~';
+        }
+        if (typeof fallbackPrefix === 'string') {
+          if (fallbackPrefix === 'o') return '@';
+          if (fallbackPrefix === 'v') return '+';
+          if (['@', '+', '%', '&', '~'].includes(fallbackPrefix)) return fallbackPrefix;
+        }
+        return '';
+      };
+
       const realUsers = (event.users || []).map(u => ({
         nick: u.nick,
-        prefix: u.modes && u.modes.length ? u.modes[0] : (u.prefix || ''),
+        prefix: modeToPrefix(u.modes, u.prefix),
         bot: false
       }));
 
